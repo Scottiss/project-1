@@ -1,23 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="style.css">
-	<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-	<title>Hiking Locations | Integrated Weather Map</title>
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <title>Hiking Locations | Integrated Weather Map</title>
+  </head>
 
-<body>
-	<div class="container">
-		<h1>Search for nearby Hiking locations!</h1>
-	</div>
-	
-	<div class="container">
-		<input class="searchBar" type="text" placeholder="Search by Location...">
-		<button class="btn" href="#">Search</button>
-	</div>
+  <body>
+    <div class="container">
+      <h1>Search for nearby Hiking locations!</h1>
+    </div>
 
-<script src="main.js"></script>
-</body>
+    <div class="container">
+      <input
+        class="searchBar"
+        type="text"
+        placeholder="Search by Location..."
+      />
+      <button class="btn" href="#">Search</button>
+    </div>
+
+    <!-- results from trail search goes here -->
+    <div class="result-container">
+      <img class="picture" id="hike-pic" />
+      <p class="name" id="hike-name"></p>
+      <p class="ascent" id="hike-ascent"></p>
+      <p class="date" id="condition-date"></p>
+      <p class="details" id="condition-details"></p>
+      <p class="status" id="condition-status"></p>
+      <p class="descent" id="hike-descent"></p>
+      <p class="difficulty" id="hike-difficulty"></p>
+      <p class="latitude" id="height-latitude"></p>
+      <p class="longitude" id="hike-longitude"></p>
+      <p class="length" id="hike-length"></p>
+      <p class="votes" id="hike-votes"></p>
+      <p class="stars" id="height-stars"></p>
+      <p class="type" id="hike-type"></p>
+      <p class="summary" id="hike-summary"></p>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
 </html>
