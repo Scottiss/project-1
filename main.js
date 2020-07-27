@@ -23,7 +23,7 @@ $(searchBtn).click(function () {
 
     // WEATHER API FOR CURRENT DAY
     $.getJSON(
-      `https:api.openweathermap.org/data/2.5/onecall?lat=${coord.lat}&lon=${coord.lon}&appid=${weatherID}`,
+      `https:api.openweathermap.org/data/2.5/onecall?lat=${coord.lat}&lon=${coord.lon}&units=Imperial&appid=${weatherID}`,
       function (info) {
         var weatherResults = $(".weather-result-container");
         $("#current-weather").html(info.current.weather[0].main);
@@ -39,17 +39,25 @@ $(searchBtn).click(function () {
       `https://www.hikingproject.com/data/get-trails?lat=${coord.lat}&lon=${coord.lon}&maxDistance=10&key=${trailID}`,
       function (data) {
         var trailResults = $(".trail-result-container");
-        // for (i = 0; i < data.trails.length; i++) { I WANT THIS TO LOOP THROUGH OBJECT ARRAY TO GET ALL RESULTS
-        // TRAIL RESULTS DIV
-        var htmlRes = $("#hike-pic").attr("src", data.trails[1].imgMedium);
-        $("#hike-name").html(data.trails[0].name);
-        $("#location").html(data.trails[1].location);
-        $("#condition-status").html(data.trails[1].conditionStatus);
-        $("#hike-type").html(data.trails[1].type);
-        $("#hike-summary").html(data.trails[1].summary);
-        // $("#url").html(data.trails[1].url); HOW TO GET THIS TO SHOW AS A LINK
+        trailResults.empty();
+        for (i = 0; i < data.trails.length; i++) {
+          console.log(data.trails[i].imgMedium);
+          var trailStrg = `<div class="col"><img id="hike-pic" src='${data.trails[i].imgMedium}' /></div>
+          
+        <div class="col">Name: <span id="hike-name">${data.trails[i].name}</span></div>
+        <br>
+        <div class="col">Location: <span id="location">${data.trails[i].location}</span></div>
+          <br>
+        <div class="col">Condition Status: <span id="condition-status">${data.trails[i].conditionStatus}</span></div>
+          <br>
+        <div class="col">Hike type: <span id="hike-type">${data.trails[i].summary}</span></div>
+          <br>
+        <div class="col">Hike Summary: <span id="hike-summary">${data.trails[i].summary}</span></div>
+        <div class="col">URL: <a href="${data.trails[i].url}">${data.trails[i].url}</a></div>`;
+
+          trailResults.append(trailStrg);
+        }
         console.log(data);
-        // trailResults.append(htmlRes);
       }
     );
   });
