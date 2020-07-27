@@ -20,17 +20,31 @@
       <input class="searchBar" type="text" placeholder="Search by Zipcode" />
       <button class="btn" type="button">Search</button>
     </div>
-
+    <br />
+    <br />
     <!-- results from trail search goes here -->
-    <div class="result-container">
-      <img id="hike-pic" />
-      <p id="hike-name"></p>
-      <p id="location"></p>
-      <p id="condition-status"></p>
-      <p id="hike-type"></p>
-      <p id="hike-summary"></p>
-      <p id="url"></p>
+    <div class="trail-result-container">
+      
+      <div class="col"><img id="hike-pic" src="" /></div>
+      <div class="col">Name: <span id="hike-name"></span></div>
+      <br>
+      <div class="col">Location: <span id="location"></span></div>
+        <br>
+      <div class="col">Condition Status: <span id="condition-status"></span></div>
+        <br>
+      <div class="col">Hike type: <span id="hike-type"></span></div>
+        <br>
+      <div class="col">Hike Summary: <span id="hike-summary"></span></div>
+      <!-- <p id="url"></p>  ----- HOW TO MAKE URL SHOW UP? -->
     </div>
+      <br>
+    <div class="weather-result-container">
+        <div class="col">Current Weather: <span id="current-weather"></span></div>
+        <div class="col">Description: <span id="description_weather"></span></div>
+         <div class="col">Temperature: <span id="temperature"></span></div>
+        <div class="col">Humidity: <span id="humidity"></span></div>
+        
+
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="main.js"></script>
   </body>

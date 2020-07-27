@@ -1,44 +1,57 @@
 body {
-    background-image: url(./assets/images/hikingwp.jpg);
-    font-family: 'Roboto', sans-serif;
+  background-image: url(./assets/images/hikingwp.jpg);
+  font-family: "Roboto", sans-serif;
+  color: whitesmoke;
+}
+.trail-result-container {
+  background-color: darkgreen;
+  border-style: solid;
+  border-color: darkorange;
+}
+
+.weather-result-container {
+  background-color: lightblue;
+  border-style: solid;
+  border-color: lightslategray;
+  color: darkred;
 }
 
 .container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .btn {
-    background-color: white; 
-    color: black; 
-    border: 1px solid #8aa6ff;
-    padding: 6px;
-    margin-top: 7px;
-    margin-right: 18px;
-    background: #8aa6ff;
-    font-size: 17px;
-    border: none;
-    cursor: pointer;
-    box-shadow: 1px 1px black;
-  }
-  
-  .btn:hover {
-    background-color: #a7bcff;
-    color: white;
-  }
+  background-color: white;
+  color: black;
+  border: 1px solid #8aa6ff;
+  padding: 6px;
+  margin-top: 7px;
+  margin-right: 18px;
+  background: #8aa6ff;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+  box-shadow: 1px 1px black;
+}
 
-  h1 {
-      color: white;
-      font-size: 50px;
-      text-shadow: 2px 2px black;
-  }
+.btn:hover {
+  background-color: #a7bcff;
+  color: white;
+}
 
-  input {
-      background-color: white;
-      padding: 6px;
-      margin-top: 8px;
-      font-size: 17px;
-      border: none;
-      box-shadow: 1px 1px black;
-  }
+h1 {
+  color: white;
+  font-size: 50px;
+  text-shadow: 2px 2px black;
+}
+
+input {
+  background-color: white;
+  padding: 6px;
+  margin-top: 8px;
+  font-size: 17px;
+  border: none;
+  box-shadow: 1px 1px black;
+}
