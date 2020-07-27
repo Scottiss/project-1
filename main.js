@@ -21,11 +21,16 @@ $(searchBtn).click(function () {
   $.get(weather, function (response) {
     var coord = response.coord;
 
-    // WEATHER API
+    // WEATHER API FOR CURRENT DAY
     $.getJSON(
       `https:api.openweathermap.org/data/2.5/onecall?lat=${coord.lat}&lon=${coord.lon}&appid=${weatherID}`,
-      function (get) {
-        console.log(get);
+      function (info) {
+        var weatherResults = $(".weather-result-container");
+        $("#current-weather").html(info.current.weather[0].main);
+        $("#description_weather").html(info.current.weather[0].description);
+        $("#temperature").html(info.current.temp);
+        $("#humidity").html(info.current.humidity);
+        console.log(info);
       }
     );
 
@@ -33,15 +38,18 @@ $(searchBtn).click(function () {
     $.getJSON(
       `https://www.hikingproject.com/data/get-trails?lat=${coord.lat}&lon=${coord.lon}&maxDistance=10&key=${trailID}`,
       function (data) {
+        var trailResults = $(".trail-result-container");
+        // for (i = 0; i < data.trails.length; i++) { I WANT THIS TO LOOP THROUGH OBJECT ARRAY TO GET ALL RESULTS
         // TRAIL RESULTS DIV
-        // $("#hike-pic").html(data.trails[1].imgMedium);
+        var htmlRes = $("#hike-pic").attr("src", data.trails[1].imgMedium);
         $("#hike-name").html(data.trails[0].name);
         $("#location").html(data.trails[1].location);
         $("#condition-status").html(data.trails[1].conditionStatus);
         $("#hike-type").html(data.trails[1].type);
         $("#hike-summary").html(data.trails[1].summary);
-        $("#url").html(data.trails[1].url);
+        // $("#url").html(data.trails[1].url); HOW TO GET THIS TO SHOW AS A LINK
         console.log(data);
+        // trailResults.append(htmlRes);
       }
     );
   });
