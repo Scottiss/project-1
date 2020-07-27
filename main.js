@@ -50,10 +50,11 @@ $(searchBtn).click(function () {
           <br>
         <div class="col">Condition Status: <span id="condition-status">${data.trails[i].conditionStatus}</span></div>
           <br>
-        <div class="col">Hike type: <span id="hike-type">${data.trails[i].summary}</span></div>
+        <div class="col">Hike type: <span id="hike-type">${data.trails[0].type}</span></div>
           <br>
         <div class="col">Hike Summary: <span id="hike-summary">${data.trails[i].summary}</span></div>
-        <div class="col">URL: <a href="${data.trails[i].url}">${data.trails[i].url}</a></div>`;
+        <br>
+        <div class="col">For more info about this trail:<a href="${data.trails[i].url}">${data.trails[i].url}</a></div>`;
 
           trailResults.append(trailStrg);
         }
