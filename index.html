@@ -3,25 +3,29 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
       rel="stylesheet"
     />
-    <title>Hiking Locations | Integrated Weather Map</title>
+    <title>Hiking Locations</title>
   </head>
 
   <body>
+    <!-- HEADER CONTAINER -->
     <div class="container">
       <h1>Search for nearby Hiking locations!</h1>
     </div>
 
+    <!-- BUTTON CONTAINER -->
     <div class="container">
       <input class="searchBar" type="text" placeholder="Search by Zipcode" />
-      <button class="btn" type="button">Search</button>
+      <button id="btn" type="button"class="btn btn-success">Search</button>
     </div>
     <br />
     <br />
+    <!-- WEATHER CONTAINER -->
       <div class="weather-result-container" id="show-weather">
     <h2 class="weathertext">WEATHER</h2>
 
@@ -36,7 +40,7 @@
 </div>
 </br>
 
-    <div class="all-results-container">
+    <!-- TRAIL CONTAINER -->
     <div class="trail-result-container" id="show-trail">
       
       <div class="col"><img id="hike-pic" src="" /></div>
