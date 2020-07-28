@@ -1,6 +1,6 @@
 # MSU Full Stack Bootcamp Project 1: Hiking Location/weather Dashboard
 
-A website that will provide local hiking trails and the current weather based on the user's zipcode. Featuring updated HTML, CSS, JavaScript and jQuery.
+A website that will provide local hiking trails and the current weather based on the user's zipcode. Featuring updated HTML, CSS, JavaScript, Bootstrap, and jQuery.
 
 ![Screenshot of application](/assets/images/ScreenShot.PNG)
 
