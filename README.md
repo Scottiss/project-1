@@ -28,7 +28,7 @@ A website that will provide local hiking trails and the current weather based on
 
 ![Screenshot of application](/assets/images/ScreenShot.PNG)
 
-Link to application: [Application](https://scottiss.github.io/project-1)
+Link to application: [scottiss.github.io/project-1](https://scottiss.github.io/project-1)
 
 ### Contributors
 
