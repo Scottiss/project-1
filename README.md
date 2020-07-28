@@ -1,39 +1,39 @@
-# MSU Full Stack Bootcamp Project 1:Hiking Location/Weather Dashboard
+# MSU Full Stack Bootcamp Project 1: Hiking Location/weather Dashboard
 
-A website that will provide local hiking trails and the current weather based on the user's zip code. Featuring updated HTML, CSS, JavaScript and jQuery.
+A website that will provide local hiking trails and the current weather based on the user's zipcode. Featuring updated HTML, CSS, JavaScript and jQuery.
 
-## API's Used
+![Screenshot of application](/assets/images/ScreenShot.PNG)
 
-* Hiking Project Data API: [Hiking Data API](https://www.hikingproject.com/data)
+Link to application: [scottiss.github.io/project-1](https://scottiss.github.io/project-1)
 
-* Open Weather Map API: [Weather API](https://openweathermap.org/api)
+## API's Used
 
-## Minimum Requirements
+* Hiking Project Data API: [Hiking Data API](https://www.hikingproject.com/data)
 
-* Must use at least two server-side APIs
+* Open Weather Map API: [Weather API](https://openweathermap.org/api)
 
-* Must use a CSS framework (preferably other than Bootstrap)
+## Minimum Requirements
 
-* Must be interactive (i.e: accept and respond to user input)
+* Must use at least two server-side APIs
 
-* Use at least one new third-party API
+* Must use a CSS framework (preferably other than Bootstrap)
 
-* Must have a polished UI
+* Must be interactive (i.e: accept and respond to user input)
 
-* Must meet good quality coding standards
+* Use at least one new third-party API
 
-* Does not use alerts, confirms or prompts (look into modals)
+* Must have a polished UI
 
-* Must be deployed to GitHub Pages
+* Must meet good quality coding standards
 
-![Screenshot of application](assets\images\ScreenShot.PNG)
+* Does not use alerts, confirms or prompts (look into modals)
 
-Link to application: [Application](scottiss.github.io/project-1)
+* Must be deployed to GitHub Pages
 
-### Contributors
+### Contributors
 
-* Ari Robinson @Scottiss
+* Ari Robinson @Arob7
 
-* Scott Lagas @Arob7
+* Scott Lagas @Scottiss
 
-* Stephanie Hall @stephanie-hall
+* Stephanie Hall @stephanie-hall
