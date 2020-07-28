@@ -1,12 +1,18 @@
-let searchBtn = ".btn";
-
 //   API KEYS
 let weatherID = "8922c7c9ff2ae54c2727e6a09d80cc98";
 let trailID = "200845268-2016567b3b52abddf0f22a66980c383e";
 
-// BUTTON FUNCTION
-$(searchBtn).click(function () {
+// HIDES WEATHER AND TRAIL DIVS
+$("#show-weather").hide();
+$("#show-trail").hide();
+
+// BUTTON
+$(".btn").click(function () {
   var trailSearch = $(this).prev().val();
+
+  // SHOWS WEATHER AND TRAIL DIVS WHEN BUTTON CLICKED
+  $("#show-trail").show();
+  $("#show-weather").show();
 
   // SEARCH BY ZIPCODE
   if ($(this).prev().attr("placeholder") === "Search by Zipcode") {
@@ -41,7 +47,6 @@ $(searchBtn).click(function () {
         var trailResults = $(".trail-result-container");
         trailResults.empty();
         for (i = 0; i < data.trails.length; i++) {
-          console.log(data.trails[i].imgMedium);
           var trailStrg = `<div class="col"><img id="hike-pic" src='${data.trails[i].imgMedium}' /></div>
           
         <div class="col">Name: <span id="hike-name">${data.trails[i].name}</span></div>
