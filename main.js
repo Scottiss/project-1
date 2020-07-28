@@ -29,7 +29,7 @@ $(".btn").click(function () {
 
     // WEATHER API FOR CURRENT DAY
     $.getJSON(
-      `https:api.openweathermap.org/data/2.5/onecall?lat=${coord.lat}&lon=${coord.lon}&units=Imperial&appid=${weatherID}`,
+      `https://api.openweathermap.org/data/2.5/onecall?lat=${coord.lat}&lon=${coord.lon}&units=Imperial&appid=${weatherID}`,
       function (info) {
         var weatherResults = $(".weather-result-container");
         $("#current-weather").html(info.current.weather[0].main);
