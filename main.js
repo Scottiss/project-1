@@ -59,7 +59,7 @@ $("#btn").click(function () {
           <br>
         <div class="col">Hike Summary: <span id="hike-summary">${data.trails[i].summary}</span></div>
         <br>
-        <div class="col">Click for more info:<a href="${data.trails[i].url}">${data.trails[i].url}</a></div>`;
+        <div class="col">More info:<a href="${data.trails[i].url}">${data.trails[i].url}</a></div>`;
 
           trailResults.append(trailStrg);
         }
