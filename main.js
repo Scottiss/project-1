@@ -55,7 +55,7 @@ $("#btn").click(function () {
           <br>
         <div class="col">Condition Status: <span id="condition-status">${data.trails[i].conditionStatus}</span></div>
           <br>
-        <div class="col">Hike type: <span id="hike-type">${data.trails[0].type}</span></div>
+        <div class="col">Hike type: <span id="hike-type">${data.trails[i].type}</span></div>
           <br>
         <div class="col">Hike Summary: <span id="hike-summary">${data.trails[i].summary}</span></div>
         <br>
